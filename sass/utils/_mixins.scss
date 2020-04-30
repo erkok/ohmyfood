@@ -13,7 +13,7 @@
   background: $primary-color;
 }
 .top-header,
-button,
+.button,
 footer {
   @include main-background;
 }
@@ -48,7 +48,7 @@ footer {
 }
 .footertext a,
 .threedots,
-button,
+.button,
 footer {
   @include secondary-fontcolor;
 }
