@@ -9,7 +9,7 @@
 }
 
 .top-header,
-button,
+.button,
 footer {
   background: #579c87;
 }
@@ -35,7 +35,7 @@ footer {
 
 .footertext a,
 .threedots,
-button,
+.button,
 footer {
   color: #fcca46;
 }
@@ -140,7 +140,7 @@ h4 {
   margin-bottom: 120px;
 }
 
-button {
+.button {
   width: 300px;
   height: 60px;
   position: relative;
@@ -162,7 +162,7 @@ button {
   font-size: 1.7rem;
   font-family: "Raleway", sans-serif, Arial, Helvetica;
   text-align: center;
-  line-height: 3rem;
+  line-height: 3.5rem;
   cursor: pointer;
 }
 .threedots:hover {
@@ -191,7 +191,7 @@ button {
 }
 /*------------------------ Btn / Media Queries max 400px ------------------------------*/
 @media all and (max-width: 400px) {
-  button {
+  .button {
     margin-bottom: 120px;
   }
 }
