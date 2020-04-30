@@ -1,0 +1,645 @@
+
+/* Titre du menu se truvant au dessus du menu  */
+
+.maintitle {
+  text-align: center;
+
+  .title-three {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+article {
+  margin-bottom: 5rem;
+}
+
+/* Section principale des pages internes */
+
+.main__section--nothome {
+  float: unset;
+  margin: 25px auto auto;
+  width: 60rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 8rem;
+
+  article ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  article li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    padding: 0;
+    margin-top: 1.3rem;
+  }
+}
+
+/* div interne du menu avec l'effet hover, titres et l'image pour la note enchantée  */
+
+.menu__box--nothome {
+  transform: none;
+  padding: 4rem 0 3rem;
+
+  &:hover {
+    transform: none;
+    opacity: unset;
+  }
+
+  .title-one {
+    font-size: 3rem;
+  }
+
+  img {
+    width: 65px;
+  }
+}
+
+/* Titre des listes du menu avec l'animation au surpassage de la souris */
+
+.list__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+  img {
+    width: 15rem;
+  }
+
+  .title-four:after {
+    content: "";
+    border-bottom: solid 3px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    transform: scaleX(0);
+    transition: 1s;
+    transform-origin: 0 50%;
+  }
+
+  .title-four:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+/* Contenu de la section principale */
+
+.page .main__section {
+  font-family: 'Raleway', sans-serif, Arial, Helvetica;
+  color: $main-text-color;
+
+  &--nothome .item {
+    margin: 0;
+    color: $lanote-maincolor;
+    font-size: 1.3rem;
+  }
+
+  &--nothome .price {
+    margin: 0;
+    font-weight: bold;
+    color: $lanote-maincolor;
+    font-size: 1.4rem;
+  }
+
+  &--lanote {
+    font-family: 'Kalam', cursive;
+    color: $lanote-maincolor;
+
+    .list__title {
+      .title-four {
+        color: $lanote-maincolor;
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        &:after {
+          color: $lanote-maincolor;
+        }
+      }
+    }
+  }
+
+  &--lafrancaise {
+    font-family: 'Scheherazade', serif;
+
+    .list__title {
+      .title-four {
+        line-height: 3rem;
+        font-size: 2rem;
+      }
+
+      img {
+        width: 13rem;
+      }
+    }
+
+    .menu__box--nothome {
+      padding: 6rem 0;
+
+      .title-one {
+        font-size: 2.3rem;
+      }
+    }
+
+    .item {
+      font-size: 1.8rem;
+    }
+
+    .price {
+      font-size: 1.8rem;
+    }
+
+    article:nth-child(2) .item,
+    article:nth-child(2) .list__title .title-four,
+    article:nth-child(2) .list__title .title-four:after,
+    article:nth-child(2) .price {
+      color: $lafrancaise-maincolor;
+    }
+
+    article:nth-child(3) .item,
+    article:nth-child(3) .list__title .title-four,
+    article:nth-child(3) .list__title .title-four:after,
+    article:nth-child(3) .price {
+      color: $lafrancaise-list-secondcolor;
+    }
+
+    article:nth-child(4) .item,
+    article:nth-child(4) .list__title .title-four,
+    article:nth-child(4) .list__title .title-four:after,
+    article:nth-child(4) .price {
+      color: $lafrancaise-list-tirthcolor;
+    }
+  }
+
+  &--ledelice {
+    font-family: $secondary-font-family;
+
+    .list__title {
+      img {
+        width: 13rem;
+      }
+
+      .title-four {
+        color: $main-text-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        &:after {
+          color: #1789f9;
+        }
+      }
+    }
+
+    .item {
+      color: $main-text-color;
+    }
+
+    .price {
+      color: $main-text-color;
+    }
+
+    .menu__box--nothome {
+      padding: 6rem 0;
+
+      .title-one {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &--lapalette {
+    font-family: $secondary-font-family;
+
+    .list__title {
+      .title-four {
+        color: $main-text-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        &:after {
+          color: #3d9339;
+        }
+      }
+
+      img {
+        width: 13rem;
+      }
+    }
+
+    .item {
+      color: $main-text-color;
+    }
+
+    .price {
+      color: $main-text-color;
+    }
+
+    .menu__box--nothome {
+      padding: 6rem 0;
+
+      .title-one {
+        font-size: 3.2rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* Footer du menu */
+
+.menu__footer {
+  padding: 0 0 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+
+  img {
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  .title-one {
+    font-size: 2.7rem;
+  }
+}
+
+/*------------------------ Menupages / Media Queries max 1280px ------------------------------*/
+
+@media all and (max-width: 1280px) {
+  .page {
+    .main__section {
+      width: 60rem;
+    }
+  }
+}
+
+/*------------------------ Menupages / Media Queries max 1080px ------------------------------*/
+
+@media all and (max-width: 1080px) {
+  .maintitle {
+    .title-three {
+      font-size: 1.7rem;
+    }
+  }
+
+  .menu__box--nothome {
+    img {
+      width: 55px;
+    }
+
+    .title-one {
+      font-size: 2.5rem;
+    }
+  }
+
+  .list__title {
+    align-items: normal;
+
+    img {
+      width: 30%;
+    }
+
+    .title-four {
+      font-size: 1.5rem;
+      line-height: 1rem;
+    }
+  }
+
+  .menu__footer {
+    img {
+      width: 35px;
+    }
+
+    .title-one {
+      font-size: 2.2rem;
+    }
+  }
+
+  .page .main__section {
+    width: 80vw;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+
+    &--nothome {
+      .item {
+        font-size: 1.1rem;
+      }
+
+      .price {
+        font-size: 1.2rem;
+      }
+    }
+
+    &--ledelice {
+      .list__title {
+        .title-four {
+          font-size: 1.3rem;
+        }
+
+        img {
+          width: 25%;
+        }
+      }
+
+      .menu__box--nothome {
+        .title-one {
+          font-size: 2.6rem;
+        }
+      }
+    }
+
+    &--lapalette {
+      .list__title {
+        .title-four {
+          font-size: 1.3rem;
+        }
+
+        img {
+          width: 25%;
+        }
+      }
+
+      .menu__box--nothome {
+        .title-one {
+          font-size: 2.6rem;
+        }
+      }
+    }
+
+    &--lafrancaise {
+      .item {
+        font-size: 1.8rem;
+      }
+
+      .price {
+        font-size: 1.9rem;
+      }
+
+      .list__title {
+        .title-four {
+          line-height: 1rem;
+        }
+
+        img {
+          width: 20%;
+        }
+      }
+
+      .menu__box--nothome {
+        .title-one {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------ Menupages / Media Queries max 700px ------------------------------*/
+
+@media all and (max-width: 700px) {
+  .maintitle {
+    .title-three {
+      font-size: 1.5rem;
+    }
+  }
+
+  .menu__box--nothome {
+    img {
+      width: 45px;
+    }
+
+    .title-one {
+      font-size: 2.2rem;
+    }
+  }
+
+  .list__title {
+    img {
+      width: 25%;
+    }
+
+    .title-four {
+      font-size: 1.2rem;
+    }
+  }
+
+  .menu__footer {
+    img {
+      width: 30px;
+    }
+
+    .title-one {
+      font-size: 2rem;
+    }
+  }
+
+  .page .main__section {
+    &--nothome {
+      .item {
+        font-size: 1rem;
+        margin-right: 20px;
+      }
+
+      .price {
+        font-size: 1.1rem;
+      }
+    }
+
+    &--lanote {
+      .list__title {
+        .title-four {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &--ledelice {
+      .list__title {
+        .title-four {
+          font-size: 1.1rem;
+        }
+
+        img {
+          width: 20%;
+        }
+      }
+    }
+
+    &--lapalette {
+      .list__title {
+        .title-four {
+          font-size: 1.1rem;
+        }
+
+        img {
+          width: 20%;
+        }
+      }
+    }
+
+    &--lafrancaise {
+      .list__title {
+        .title-four {
+          font-size: 1.6rem;
+        }
+      }
+
+      .menu__box--nothome {
+        .title-one {
+          font-size: 1.7rem;
+        }
+      }
+
+      .item {
+        font-size: 1.3rem;
+      }
+
+      .price {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+/*------------------------ Menupages / Media Queries max 540px ------------------------------*/
+
+@media all and (max-width: 540px) {
+  .page .main__section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &--ledelice {
+      .menu__box--nothome {
+        .title-one {
+          font-size: 2.2rem;
+        }
+      }
+
+      .list__title {
+        .title-four {
+          font-size: 1rem;
+        }
+
+        img {
+          width: 12%;
+        }
+      }
+
+      .item {
+        font-size: 0.9rem;
+      }
+
+      .price {
+        font-size: 1rem;
+      }
+    }
+
+    &--lapalette {
+      .menu__box--nothome {
+        .title-one {
+          font-size: 1.9rem;
+        }
+      }
+
+      .list__title {
+        .title-four {
+          font-size: 1rem;
+        }
+
+        img {
+          width: 12%;
+        }
+      }
+
+      .item {
+        font-size: 0.9rem;
+      }
+
+      .price {
+        font-size: 1rem;
+      }
+    }
+
+    &--lafrancaise {
+      .list__title {
+        img {
+          width: 10%;
+        }
+
+        .title-four {
+          font-size: 1.4rem;
+        }
+      }
+
+      .menu__box--nothome {
+        .title-one {
+          font-size: 1.3rem;
+        }
+      }
+
+      .item {
+        font-size: 1.1rem;
+      }
+
+      .price {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .menu__box--nothome {
+    img {
+      width: 45px;
+    }
+
+    .title-one {
+      font-size: 2rem;
+    }
+  }
+
+  .list__title {
+    img {
+      width: 15%;
+    }
+  }
+
+  .menu__footer {
+    .title-one {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+/*------------------------ Menupages / Media Queries max 400px ------------------------------*/
+
+@media all and (max-width: 400px) {
+  .page .main__section {
+    &--ledelice {
+      .list__title {
+        .title-four {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    &--lapalette {
+      .list__title {
+        .title-four {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    &--nothome {
+      margin-bottom: 14rem;
+    }
+  }
+}

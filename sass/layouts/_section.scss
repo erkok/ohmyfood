@@ -1,0 +1,48 @@
+
+/* Section principale visible sur toutes les pages */
+
+.main {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  margin: 2rem auto auto;
+  display: inline-block;
+
+  &__section {
+    width: 21%;
+    min-height: 55vh;
+    display: inline-block;
+    float: left;
+    background: transparent;
+    vertical-align: top;
+    white-space: normal;
+    margin: 2%;
+    box-shadow: 0.5px 0.5px 8px #d6d6d6;
+    display: grid;
+  }
+}
+
+/*------------------------ Section / Media Queries ------------------------------*/
+
+@media all and (max-width: 1280px) {
+  .main__section {
+    width: 46%;
+    min-height: 70vh;
+  }
+}
+@media all and (max-width: 900px) {
+  .main__section {
+    min-height: 55vh;
+  }
+}
+@media all and (max-width: 650px) {
+  .main__section {
+    width: 96%;
+    min-height: 80vh;
+  }
+}
+@media all and (max-width: 540px) {
+  .main__section {
+    min-height: 55vh;
+  }
+}

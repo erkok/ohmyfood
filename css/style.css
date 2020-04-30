@@ -1,0 +1,912 @@
+@charset "UTF-8";
+/* Variables & Mixins */
+.footer__left,
+.footer__right,
+.list__title .title-four:after,
+.logo,
+.top-header a {
+  display: block;
+}
+
+.top-header,
+button,
+footer {
+  background: #579c87;
+}
+
+.main__section--lanote .title-two,
+.main__section--lanote .title-one,
+.main__section--lanote.main__section--nothome .item,
+.main__section--lanote.main__section--nothome .price,
+.page .main__section--lanote,
+.page .main__section--lanote .list__title .title-four,
+.page .main__section--lanote .list__title .title-four:after {
+  color: #3c1218;
+}
+
+.main__section--lafrancaise .title-two,
+.main__section--lafrancaise .title-one,
+.page .main__section--lafrancaise article:nth-child(2) .item,
+.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four,
+.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four:after,
+.page .main__section--lafrancaise article:nth-child(2) .price {
+  color: #c77412;
+}
+
+.footertext a,
+.threedots,
+button,
+footer {
+  color: #fcca46;
+}
+
+.page .main__section,
+.page .main__section--lapalette .item,
+.page .main__section--lapalette .list__title .title-four,
+.page .main__section--lapalette .price,
+.page .main__section--ledelice .item,
+.page .main__section--ledelice .list__title .title-four,
+.page .main__section--ledelice .price {
+  color: #000000;
+}
+
+/* Base */
+/* Paramètre généraux regroupés */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+  border-color: transparent;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Body overflow-x hidden sinon le scrollbar horizontal apparait */
+body {
+  font-family: "Raleway", sans-serif, Arial, Helvetica;
+  overflow-x: hidden;
+}
+body a {
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+.title-one {
+  font-size: 1.5rem;
+}
+
+.title-two {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.title-three {
+  font-size: 1.3rem;
+}
+
+.title-four {
+  font-size: 1.1rem;
+}
+
+/* Btn */
+/* Section btn visible seul sur la page d'acceuil */
+.btn {
+  width: 98%;
+  height: auto;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 120px;
+}
+
+button {
+  width: 300px;
+  height: 60px;
+  position: relative;
+  outline: none !important;
+  border: 0;
+  margin-top: 55px;
+  left: 50%;
+  margin-left: -150px;
+  border-radius: 0.7rem;
+  font-size: 1.7rem;
+  font-family: "Raleway", sans-serif, Arial, Helvetica;
+  color: #fcca46;
+  background: #579c87;
+}
+
+/* threedots, animation avec les 3 points. Ne pas changer le margin-left 13px sinon le texte bouge lorsque l'on surpasse avec la souris */
+.threedots {
+  color: #fcca46;
+  font-size: 1.7rem;
+  font-family: "Raleway", sans-serif, Arial, Helvetica;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+}
+.threedots:hover {
+  margin-left: 13px;
+}
+.threedots:hover:after {
+  content: " .";
+  animation: dots 1s steps(5, end) infinite alternate;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #fcca46;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #fcca46, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  100%, 80% {
+    text-shadow: 0.25em 0 0 #fcca46, 0.5em 0 0 #fcca46;
+  }
+}
+/*------------------------ Btn / Media Queries max 400px ------------------------------*/
+@media all and (max-width: 400px) {
+  button {
+    margin-bottom: 120px;
+  }
+}
+/* Header */
+/* Header visible sur toutes les pages */
+.top-header {
+  background: #579c87;
+}
+.top-header a {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.logo {
+  width: 260px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+/*------------------------ Header / Media Queries max 300px ------------------------------*/
+@media all and (max-width: 300px) {
+  .logo {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .top-header a {
+    margin: 0 auto;
+    width: 180px;
+  }
+}
+/* Footer */
+/* Footer visible sur toutes les pages */
+footer {
+  background: #579c87;
+  color: #fcca46;
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  bottom: 0;
+  font-size: 1.2rem;
+  line-height: 3.3rem;
+}
+footer .footer__left {
+  display: block;
+  float: left;
+  height: 100%;
+  padding-left: 20px;
+}
+footer .footer__right {
+  display: block;
+  float: right;
+  height: 100%;
+  padding-right: 20px;
+}
+
+/* Animation texte footer */
+.footertext:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/*------------------------ Footer / Media Queries max 400px ------------------------------*/
+@media all and (max-width: 400px) {
+  footer {
+    height: 160px;
+    padding: 25px 0;
+  }
+  footer .footer__left {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    padding: 0;
+  }
+  footer .footer__right {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    padding: 0;
+  }
+}
+/* Section */
+/* Section principale visible sur toutes les pages */
+.main {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  margin: 2rem auto auto;
+  display: inline-block;
+}
+.main__section {
+  width: 21%;
+  min-height: 55vh;
+  display: inline-block;
+  float: left;
+  background: transparent;
+  vertical-align: top;
+  white-space: normal;
+  margin: 2%;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
+  display: grid;
+}
+
+/*------------------------ Section / Media Queries ------------------------------*/
+@media all and (max-width: 1280px) {
+  .main__section {
+    width: 46%;
+    min-height: 70vh;
+  }
+}
+@media all and (max-width: 900px) {
+  .main__section {
+    min-height: 55vh;
+  }
+}
+@media all and (max-width: 650px) {
+  .main__section {
+    width: 96%;
+    min-height: 80vh;
+  }
+}
+@media all and (max-width: 540px) {
+  .main__section {
+    min-height: 55vh;
+  }
+}
+/* Page d'acceuil */
+/* Section interne du menu 'la note enchantée', page d'acceuil  */
+.main__section--lanote {
+  background: #fcdfdb;
+}
+.main__section--lanote .title-one {
+  font-family: "Devonshire", cursive;
+  color: #3c1218;
+}
+.main__section--lanote .title-two {
+  font-family: "Segoe Print";
+  font-weight: 600;
+  color: #3c1218;
+}
+
+/* Section interne du menu 'le chic à la française', page d'acceuil  */
+.main__section--lafrancaise {
+  background: #fff5fe;
+}
+.main__section--lafrancaise .title-one {
+  font-family: "Croissant One", cursive;
+  font-size: 1.1rem;
+  background: -webkit-linear-gradient(-60deg, #d8852e 10%, #b67094 55%, #905bfd 85%);
+  background: -moz-linear-gradient(-60deg, #d8852e 10%, #b67094 55%, #905bfd 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  color: #c77412;
+}
+.main__section--lafrancaise .title-two {
+  font-family: "Rozha One", serif;
+  color: #c77412;
+}
+
+/* Section interne du menu 'le délice des papilles', page d'acceuil  */
+.main__section--ledelice {
+  background: #f9f9f9;
+}
+.main__section--ledelice .title-one {
+  font-family: "Dancing Script", cursive;
+  color: #0887fb;
+  font-size: 1.6rem;
+  background: -webkit-linear-gradient(-60deg, #0431df 10%, #076bf2 55%, #1789f9 85%);
+  background: -moz-linear-gradient(-60deg, #0431df 10%, #076bf2 55%, #1789f9 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  padding-left: 5px;
+}
+.main__section--ledelice .title-two {
+  font-family: "Segoe Print";
+  color: #0887fb;
+}
+
+/* Section interne du menu 'la palette du gout', page d'acceuil  */
+.main__section--lapalette {
+  background: #fdfffd;
+}
+.main__section--lapalette .title-one {
+  font-family: "Kaushan Script", cursive;
+  color: #72bf56;
+  font-size: 1.6rem;
+  background: -webkit-linear-gradient(-60deg, #3d9339 10%, #69b852 55%, #9be16c 85%);
+  background: -moz-linear-gradient(-60deg, #3d9339 10%, #69b852 55%, #9be16c 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.main__section--lapalette .title-two {
+  font-family: "Segoe Print";
+  color: #72bf56;
+}
+
+/* div interne des menu contenant le box qui s'agrandit au surpassage de la souris */
+.menu__box {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: all 400ms;
+  text-decoration: none;
+}
+.menu__box:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.menu__box img {
+  width: 45px;
+}
+
+/* Page des menus */
+/* Titre du menu se truvant au dessus du menu  */
+.maintitle {
+  text-align: center;
+}
+.maintitle .title-three {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+article {
+  margin-bottom: 5rem;
+}
+
+/* Section principale des pages internes */
+.main__section--nothome {
+  float: unset;
+  margin: 25px auto auto;
+  width: 60rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 8rem;
+}
+.main__section--nothome article ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.main__section--nothome article li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  padding: 0;
+  margin-top: 1.3rem;
+}
+
+/* div interne du menu avec l'effet hover, titres et l'image pour la note enchantée  */
+.menu__box--nothome {
+  transform: none;
+  padding: 4rem 0 3rem;
+}
+.menu__box--nothome:hover {
+  transform: none;
+  opacity: unset;
+}
+.menu__box--nothome .title-one {
+  font-size: 3rem;
+}
+.menu__box--nothome img {
+  width: 65px;
+}
+
+/* Titre des listes du menu avec l'animation au surpassage de la souris */
+.list__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.list__title img {
+  width: 15rem;
+}
+.list__title .title-four:after {
+  content: "";
+  border-bottom: solid 3px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: 0 50%;
+}
+.list__title .title-four:hover:after {
+  transform: scaleX(1);
+}
+
+/* Contenu de la section principale */
+.page .main__section {
+  font-family: "Raleway", sans-serif, Arial, Helvetica;
+  color: #000000;
+}
+.page .main__section--nothome .item {
+  margin: 0;
+  color: #3c1218;
+  font-size: 1.3rem;
+}
+.page .main__section--nothome .price {
+  margin: 0;
+  font-weight: bold;
+  color: #3c1218;
+  font-size: 1.4rem;
+}
+.page .main__section--lanote {
+  font-family: "Kalam", cursive;
+  color: #3c1218;
+}
+.page .main__section--lanote .list__title .title-four {
+  color: #3c1218;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.page .main__section--lanote .list__title .title-four:after {
+  color: #3c1218;
+}
+.page .main__section--lafrancaise {
+  font-family: "Scheherazade", serif;
+}
+.page .main__section--lafrancaise .list__title .title-four {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+.page .main__section--lafrancaise .list__title img {
+  width: 13rem;
+}
+.page .main__section--lafrancaise .menu__box--nothome {
+  padding: 6rem 0;
+}
+.page .main__section--lafrancaise .menu__box--nothome .title-one {
+  font-size: 2.3rem;
+}
+.page .main__section--lafrancaise .item {
+  font-size: 1.8rem;
+}
+.page .main__section--lafrancaise .price {
+  font-size: 1.8rem;
+}
+.page .main__section--lafrancaise article:nth-child(2) .item,
+.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four,
+.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four:after,
+.page .main__section--lafrancaise article:nth-child(2) .price {
+  color: #c77412;
+}
+.page .main__section--lafrancaise article:nth-child(3) .item,
+.page .main__section--lafrancaise article:nth-child(3) .list__title .title-four,
+.page .main__section--lafrancaise article:nth-child(3) .list__title .title-four:after,
+.page .main__section--lafrancaise article:nth-child(3) .price {
+  color: #a56799;
+}
+.page .main__section--lafrancaise article:nth-child(4) .item,
+.page .main__section--lafrancaise article:nth-child(4) .list__title .title-four,
+.page .main__section--lafrancaise article:nth-child(4) .list__title .title-four:after,
+.page .main__section--lafrancaise article:nth-child(4) .price {
+  color: #6e4ccc;
+}
+.page .main__section--ledelice {
+  font-family: "Segoe Print";
+}
+.page .main__section--ledelice .list__title img {
+  width: 13rem;
+}
+.page .main__section--ledelice .list__title .title-four {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.page .main__section--ledelice .list__title .title-four:after {
+  color: #1789f9;
+}
+.page .main__section--ledelice .item {
+  color: #000000;
+}
+.page .main__section--ledelice .price {
+  color: #000000;
+}
+.page .main__section--ledelice .menu__box--nothome {
+  padding: 6rem 0;
+}
+.page .main__section--ledelice .menu__box--nothome .title-one {
+  font-size: 3.2rem;
+}
+.page .main__section--lapalette {
+  font-family: "Segoe Print";
+}
+.page .main__section--lapalette .list__title .title-four {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.page .main__section--lapalette .list__title .title-four:after {
+  color: #3d9339;
+}
+.page .main__section--lapalette .list__title img {
+  width: 13rem;
+}
+.page .main__section--lapalette .item {
+  color: #000000;
+}
+.page .main__section--lapalette .price {
+  color: #000000;
+}
+.page .main__section--lapalette .menu__box--nothome {
+  padding: 6rem 0;
+}
+.page .main__section--lapalette .menu__box--nothome .title-one {
+  font-size: 3.2rem;
+  padding: 0;
+}
+
+/* Footer du menu */
+.menu__footer {
+  padding: 0 0 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.menu__footer img {
+  width: 40px;
+  margin-right: 20px;
+}
+.menu__footer .title-one {
+  font-size: 2.7rem;
+}
+
+/*------------------------ Menupages / Media Queries max 1280px ------------------------------*/
+@media all and (max-width: 1280px) {
+  .page .main__section {
+    width: 60rem;
+  }
+}
+/*------------------------ Menupages / Media Queries max 1080px ------------------------------*/
+@media all and (max-width: 1080px) {
+  .maintitle .title-three {
+    font-size: 1.7rem;
+  }
+
+  .menu__box--nothome img {
+    width: 55px;
+  }
+  .menu__box--nothome .title-one {
+    font-size: 2.5rem;
+  }
+
+  .list__title {
+    align-items: normal;
+  }
+  .list__title img {
+    width: 30%;
+  }
+  .list__title .title-four {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .menu__footer img {
+    width: 35px;
+  }
+  .menu__footer .title-one {
+    font-size: 2.2rem;
+  }
+
+  .page .main__section {
+    width: 80vw;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+  .page .main__section--nothome .item {
+    font-size: 1.1rem;
+  }
+  .page .main__section--nothome .price {
+    font-size: 1.2rem;
+  }
+  .page .main__section--ledelice .list__title .title-four {
+    font-size: 1.3rem;
+  }
+  .page .main__section--ledelice .list__title img {
+    width: 25%;
+  }
+  .page .main__section--ledelice .menu__box--nothome .title-one {
+    font-size: 2.6rem;
+  }
+  .page .main__section--lapalette .list__title .title-four {
+    font-size: 1.3rem;
+  }
+  .page .main__section--lapalette .list__title img {
+    width: 25%;
+  }
+  .page .main__section--lapalette .menu__box--nothome .title-one {
+    font-size: 2.6rem;
+  }
+  .page .main__section--lafrancaise .item {
+    font-size: 1.8rem;
+  }
+  .page .main__section--lafrancaise .price {
+    font-size: 1.9rem;
+  }
+  .page .main__section--lafrancaise .list__title .title-four {
+    line-height: 1rem;
+  }
+  .page .main__section--lafrancaise .list__title img {
+    width: 20%;
+  }
+  .page .main__section--lafrancaise .menu__box--nothome .title-one {
+    font-size: 2rem;
+  }
+}
+/*------------------------ Menupages / Media Queries max 700px ------------------------------*/
+@media all and (max-width: 700px) {
+  .maintitle .title-three {
+    font-size: 1.5rem;
+  }
+
+  .menu__box--nothome img {
+    width: 45px;
+  }
+  .menu__box--nothome .title-one {
+    font-size: 2.2rem;
+  }
+
+  .list__title img {
+    width: 25%;
+  }
+  .list__title .title-four {
+    font-size: 1.2rem;
+  }
+
+  .menu__footer img {
+    width: 30px;
+  }
+  .menu__footer .title-one {
+    font-size: 2rem;
+  }
+
+  .page .main__section--nothome .item {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+  .page .main__section--nothome .price {
+    font-size: 1.1rem;
+  }
+  .page .main__section--lanote .list__title .title-four {
+    font-size: 1.2rem;
+  }
+  .page .main__section--ledelice .list__title .title-four {
+    font-size: 1.1rem;
+  }
+  .page .main__section--ledelice .list__title img {
+    width: 20%;
+  }
+  .page .main__section--lapalette .list__title .title-four {
+    font-size: 1.1rem;
+  }
+  .page .main__section--lapalette .list__title img {
+    width: 20%;
+  }
+  .page .main__section--lafrancaise .list__title .title-four {
+    font-size: 1.6rem;
+  }
+  .page .main__section--lafrancaise .menu__box--nothome .title-one {
+    font-size: 1.7rem;
+  }
+  .page .main__section--lafrancaise .item {
+    font-size: 1.3rem;
+  }
+  .page .main__section--lafrancaise .price {
+    font-size: 1.3rem;
+  }
+}
+/*------------------------ Menupages / Media Queries max 540px ------------------------------*/
+@media all and (max-width: 540px) {
+  .page .main__section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .page .main__section--ledelice .menu__box--nothome .title-one {
+    font-size: 2.2rem;
+  }
+  .page .main__section--ledelice .list__title .title-four {
+    font-size: 1rem;
+  }
+  .page .main__section--ledelice .list__title img {
+    width: 12%;
+  }
+  .page .main__section--ledelice .item {
+    font-size: 0.9rem;
+  }
+  .page .main__section--ledelice .price {
+    font-size: 1rem;
+  }
+  .page .main__section--lapalette .menu__box--nothome .title-one {
+    font-size: 1.9rem;
+  }
+  .page .main__section--lapalette .list__title .title-four {
+    font-size: 1rem;
+  }
+  .page .main__section--lapalette .list__title img {
+    width: 12%;
+  }
+  .page .main__section--lapalette .item {
+    font-size: 0.9rem;
+  }
+  .page .main__section--lapalette .price {
+    font-size: 1rem;
+  }
+  .page .main__section--lafrancaise .list__title img {
+    width: 10%;
+  }
+  .page .main__section--lafrancaise .list__title .title-four {
+    font-size: 1.4rem;
+  }
+  .page .main__section--lafrancaise .menu__box--nothome .title-one {
+    font-size: 1.3rem;
+  }
+  .page .main__section--lafrancaise .item {
+    font-size: 1.1rem;
+  }
+  .page .main__section--lafrancaise .price {
+    font-size: 1.1rem;
+  }
+
+  .menu__box--nothome img {
+    width: 45px;
+  }
+  .menu__box--nothome .title-one {
+    font-size: 2rem;
+  }
+
+  .list__title img {
+    width: 15%;
+  }
+
+  .menu__footer .title-one {
+    font-size: 1.7rem;
+  }
+}
+/*------------------------ Menupages / Media Queries max 400px ------------------------------*/
+@media all and (max-width: 400px) {
+  .page .main__section--ledelice .list__title .title-four {
+    font-size: 0.9rem;
+  }
+  .page .main__section--lapalette .list__title .title-four {
+    font-size: 0.9rem;
+  }
+  .page .main__section--nothome {
+    margin-bottom: 14rem;
+  }
+}
+/* Page des mentions legales */
+.legales {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

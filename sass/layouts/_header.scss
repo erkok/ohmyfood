@@ -1,0 +1,35 @@
+
+/* Header visible sur toutes les pages */
+
+.top-header {
+  background: $primary-color;
+
+  a {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+  }
+}
+
+.logo {
+  width: 260px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+/*------------------------ Header / Media Queries max 300px ------------------------------*/
+
+@media all and (max-width: 300px) {
+  .logo {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .top-header {
+    a {
+      margin: 0 auto;
+      width: 180px;
+    }
+  }
+}

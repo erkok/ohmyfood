@@ -1,0 +1,82 @@
+
+/* Paramètre généraux regroupés */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+  border-color: transparent;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Body overflow-x hidden sinon le scrollbar horizontal apparait */
+
+body {
+  font-family: $primary-font-family;
+  overflow-x: hidden;
+
+  a {
+    color: $main-text-color;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+.title-one {
+  font-size: 1.5rem;
+}
+
+.title-two {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.title-three {
+  font-size: 1.3rem;
+}
+
+.title-four {
+  font-size: 1.1rem;
+}
