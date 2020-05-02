@@ -36,10 +36,10 @@ footer {
 }
 .main__section--lafrancaise .title-two,
 .main__section--lafrancaise h5,
-.page .main__section--lafrancaise article:nth-child(2) .item,
-.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four,
-.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four:after,
-.page .main__section--lafrancaise article:nth-child(2) .price {
+.page .main__section--lafrancaise .listing:nth-child(2) .item,
+.page .main__section--lafrancaise .listing:nth-child(2) .list__title .title-four,
+.page .main__section--lafrancaise .listing:nth-child(2) .list__title .title-four:after,
+.page .main__section--lafrancaise .listing:nth-child(2) .price {
   @include lafrancaise-color;
 }
 
