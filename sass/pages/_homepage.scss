@@ -4,7 +4,7 @@
 .main__section--lanote {
   background: $home-lanote-background;
 
-  .title-one {
+  h5 {
     font-family: 'Devonshire', cursive;
     color: $lanote-maincolor;
   }
@@ -21,7 +21,7 @@
 .main__section--lafrancaise {
   background: $home-lafrancaise-background;
 
-  .title-one {
+  h5 {
     font-family: 'Croissant One', cursive;
     font-size: 1.1rem;
     background: -webkit-linear-gradient(-60deg, #d8852e 10%, #b67094 55%, #905bfd 85%);
@@ -45,7 +45,7 @@
 .main__section--ledelice {
   background: $home-ledelice-background;
 
-  .title-one {
+  h5 {
     font-family: 'Dancing Script', cursive;
     color: $ledelice-maincolor;
     font-size: 1.6rem;
@@ -70,7 +70,7 @@
 .main__section--lapalette {
   background: $home-lapalette-background;
 
-  .title-one {
+  h5 {
     font-family: 'Kaushan Script', cursive;
     color: $lapalette-maincolor;
     font-size: 1.6rem;
