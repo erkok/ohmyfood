@@ -15,7 +15,7 @@ footer {
 }
 
 .main__section--lanote .title-two,
-.main__section--lanote .title-one,
+.main__section--lanote h5,
 .main__section--lanote.main__section--nothome .item,
 .main__section--lanote.main__section--nothome .price,
 .page .main__section--lanote,
@@ -25,7 +25,7 @@ footer {
 }
 
 .main__section--lafrancaise .title-two,
-.main__section--lafrancaise .title-one,
+.main__section--lafrancaise h5,
 .page .main__section--lafrancaise article:nth-child(2) .item,
 .page .main__section--lafrancaise article:nth-child(2) .list__title .title-four,
 .page .main__section--lafrancaise article:nth-child(2) .list__title .title-four:after,
@@ -113,7 +113,7 @@ h4 {
   font-size: 1.1rem;
 }
 
-.title-one {
+h5 {
   font-size: 1.5rem;
 }
 
@@ -367,7 +367,7 @@ footer .footer__right {
 .main__section--lanote {
   background: #fcdfdb;
 }
-.main__section--lanote .title-one {
+.main__section--lanote h5 {
   font-family: "Devonshire", cursive;
   color: #3c1218;
 }
@@ -381,7 +381,7 @@ footer .footer__right {
 .main__section--lafrancaise {
   background: #fff5fe;
 }
-.main__section--lafrancaise .title-one {
+.main__section--lafrancaise h5 {
   font-family: "Croissant One", cursive;
   font-size: 1.1rem;
   background: -webkit-linear-gradient(-60deg, #d8852e 10%, #b67094 55%, #905bfd 85%);
@@ -402,7 +402,7 @@ footer .footer__right {
 .main__section--ledelice {
   background: #f9f9f9;
 }
-.main__section--ledelice .title-one {
+.main__section--ledelice h5 {
   font-family: "Dancing Script", cursive;
   color: #0887fb;
   font-size: 1.6rem;
@@ -424,7 +424,7 @@ footer .footer__right {
 .main__section--lapalette {
   background: #fdfffd;
 }
-.main__section--lapalette .title-one {
+.main__section--lapalette h5 {
   font-family: "Kaushan Script", cursive;
   color: #72bf56;
   font-size: 1.6rem;
@@ -508,7 +508,7 @@ article {
   transform: none;
   opacity: unset;
 }
-.menu__box--nothome .title-one {
+.menu__box--nothome h5 {
   font-size: 3rem;
 }
 .menu__box--nothome img {
@@ -580,7 +580,7 @@ article {
 .page .main__section--lafrancaise .menu__box--nothome {
   padding: 6rem 0;
 }
-.page .main__section--lafrancaise .menu__box--nothome .title-one {
+.page .main__section--lafrancaise .menu__box--nothome h5 {
   font-size: 2.3rem;
 }
 .page .main__section--lafrancaise .item {
@@ -630,7 +630,7 @@ article {
 .page .main__section--ledelice .menu__box--nothome {
   padding: 6rem 0;
 }
-.page .main__section--ledelice .menu__box--nothome .title-one {
+.page .main__section--ledelice .menu__box--nothome h5 {
   font-size: 3.2rem;
 }
 .page .main__section--lapalette {
@@ -656,7 +656,7 @@ article {
 .page .main__section--lapalette .menu__box--nothome {
   padding: 6rem 0;
 }
-.page .main__section--lapalette .menu__box--nothome .title-one {
+.page .main__section--lapalette .menu__box--nothome h5 {
   font-size: 3.2rem;
   padding: 0;
 }
@@ -676,7 +676,7 @@ article {
   width: 40px;
   margin-right: 20px;
 }
-.menu__footer .title-one {
+.menu__footer h5 {
   font-size: 2.7rem;
 }
 
@@ -695,7 +695,7 @@ article {
   .menu__box--nothome img {
     width: 55px;
   }
-  .menu__box--nothome .title-one {
+  .menu__box--nothome h5 {
     font-size: 2.5rem;
   }
 
@@ -713,7 +713,7 @@ article {
   .menu__footer img {
     width: 35px;
   }
-  .menu__footer .title-one {
+  .menu__footer h5 {
     font-size: 2.2rem;
   }
 
@@ -721,6 +721,9 @@ article {
     width: 80vw;
     padding-left: 3.2rem;
     padding-right: 3.2rem;
+  }
+  .page .main__section--lanote .list__title .title-four {
+    font-size: 1.5rem;
   }
   .page .main__section--nothome .item {
     font-size: 1.1rem;
@@ -734,7 +737,7 @@ article {
   .page .main__section--ledelice .list__title img {
     width: 25%;
   }
-  .page .main__section--ledelice .menu__box--nothome .title-one {
+  .page .main__section--ledelice .menu__box--nothome h5 {
     font-size: 2.6rem;
   }
   .page .main__section--lapalette .list__title .title-four {
@@ -743,7 +746,7 @@ article {
   .page .main__section--lapalette .list__title img {
     width: 25%;
   }
-  .page .main__section--lapalette .menu__box--nothome .title-one {
+  .page .main__section--lapalette .menu__box--nothome h5 {
     font-size: 2.6rem;
   }
   .page .main__section--lafrancaise .item {
@@ -758,7 +761,7 @@ article {
   .page .main__section--lafrancaise .list__title img {
     width: 20%;
   }
-  .page .main__section--lafrancaise .menu__box--nothome .title-one {
+  .page .main__section--lafrancaise .menu__box--nothome h5 {
     font-size: 2rem;
   }
 }
@@ -771,7 +774,7 @@ article {
   .menu__box--nothome img {
     width: 45px;
   }
-  .menu__box--nothome .title-one {
+  .menu__box--nothome h5 {
     font-size: 2.2rem;
   }
 
@@ -785,7 +788,7 @@ article {
   .menu__footer img {
     width: 30px;
   }
-  .menu__footer .title-one {
+  .menu__footer h5 {
     font-size: 2rem;
   }
 
@@ -814,7 +817,7 @@ article {
   .page .main__section--lafrancaise .list__title .title-four {
     font-size: 1.6rem;
   }
-  .page .main__section--lafrancaise .menu__box--nothome .title-one {
+  .page .main__section--lafrancaise .menu__box--nothome h5 {
     font-size: 1.7rem;
   }
   .page .main__section--lafrancaise .item {
@@ -830,7 +833,7 @@ article {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .page .main__section--ledelice .menu__box--nothome .title-one {
+  .page .main__section--ledelice .menu__box--nothome h5 {
     font-size: 2.2rem;
   }
   .page .main__section--ledelice .list__title .title-four {
@@ -845,7 +848,7 @@ article {
   .page .main__section--ledelice .price {
     font-size: 1rem;
   }
-  .page .main__section--lapalette .menu__box--nothome .title-one {
+  .page .main__section--lapalette .menu__box--nothome h5 {
     font-size: 1.9rem;
   }
   .page .main__section--lapalette .list__title .title-four {
@@ -866,7 +869,7 @@ article {
   .page .main__section--lafrancaise .list__title .title-four {
     font-size: 1.4rem;
   }
-  .page .main__section--lafrancaise .menu__box--nothome .title-one {
+  .page .main__section--lafrancaise .menu__box--nothome h5 {
     font-size: 1.3rem;
   }
   .page .main__section--lafrancaise .item {
@@ -879,7 +882,7 @@ article {
   .menu__box--nothome img {
     width: 45px;
   }
-  .menu__box--nothome .title-one {
+  .menu__box--nothome h5 {
     font-size: 2rem;
   }
 
@@ -887,7 +890,7 @@ article {
     width: 15%;
   }
 
-  .menu__footer .title-one {
+  .menu__footer h5 {
     font-size: 1.7rem;
   }
 }
