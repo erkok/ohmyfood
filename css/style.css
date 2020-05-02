@@ -26,10 +26,10 @@ footer {
 
 .main__section--lafrancaise .title-two,
 .main__section--lafrancaise h5,
-.page .main__section--lafrancaise article:nth-child(2) .item,
-.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four,
-.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four:after,
-.page .main__section--lafrancaise article:nth-child(2) .price {
+.page .main__section--lafrancaise .listing:nth-child(2) .item,
+.page .main__section--lafrancaise .listing:nth-child(2) .list__title .title-four,
+.page .main__section--lafrancaise .listing:nth-child(2) .list__title .title-four:after,
+.page .main__section--lafrancaise .listing:nth-child(2) .price {
   color: #c77412;
 }
 
@@ -473,8 +473,9 @@ footer .footer__right {
   font-weight: 600;
 }
 
-article {
+.listing {
   margin-bottom: 5rem;
+  display: block;
 }
 
 /* Section principale des pages internes */
@@ -486,12 +487,12 @@ article {
   padding-right: 5rem;
   margin-bottom: 8rem;
 }
-.main__section--nothome article ul {
+.main__section--nothome .listing ul {
   list-style: none;
   padding: 0;
   margin-top: 30px;
 }
-.main__section--nothome article li {
+.main__section--nothome .listing li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.4rem;
@@ -589,22 +590,22 @@ article {
 .page .main__section--lafrancaise .price {
   font-size: 1.8rem;
 }
-.page .main__section--lafrancaise article:nth-child(2) .item,
-.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four,
-.page .main__section--lafrancaise article:nth-child(2) .list__title .title-four:after,
-.page .main__section--lafrancaise article:nth-child(2) .price {
+.page .main__section--lafrancaise .listing:nth-child(2) .item,
+.page .main__section--lafrancaise .listing:nth-child(2) .list__title .title-four,
+.page .main__section--lafrancaise .listing:nth-child(2) .list__title .title-four:after,
+.page .main__section--lafrancaise .listing:nth-child(2) .price {
   color: #c77412;
 }
-.page .main__section--lafrancaise article:nth-child(3) .item,
-.page .main__section--lafrancaise article:nth-child(3) .list__title .title-four,
-.page .main__section--lafrancaise article:nth-child(3) .list__title .title-four:after,
-.page .main__section--lafrancaise article:nth-child(3) .price {
+.page .main__section--lafrancaise .listing:nth-child(3) .item,
+.page .main__section--lafrancaise .listing:nth-child(3) .list__title .title-four,
+.page .main__section--lafrancaise .listing:nth-child(3) .list__title .title-four:after,
+.page .main__section--lafrancaise .listing:nth-child(3) .price {
   color: #a56799;
 }
-.page .main__section--lafrancaise article:nth-child(4) .item,
-.page .main__section--lafrancaise article:nth-child(4) .list__title .title-four,
-.page .main__section--lafrancaise article:nth-child(4) .list__title .title-four:after,
-.page .main__section--lafrancaise article:nth-child(4) .price {
+.page .main__section--lafrancaise .listing:nth-child(4) .item,
+.page .main__section--lafrancaise .listing:nth-child(4) .list__title .title-four,
+.page .main__section--lafrancaise .listing:nth-child(4) .list__title .title-four:after,
+.page .main__section--lafrancaise .listing:nth-child(4) .price {
   color: #6e4ccc;
 }
 .page .main__section--ledelice {
