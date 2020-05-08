@@ -23,7 +23,7 @@
 
 /*------------------------ Section / Media Queries ------------------------------*/
 
-@media screen and (orientation:landscape) and (max-width:1280px) {
+@media all and (orientation:landscape) and (max-width:1280px) {
    .main__section {
     min-height: 500px;
   }
@@ -34,7 +34,7 @@
     width: 46%;
   }
 }
-@media all and (max-width: 900px) {
+@media all and (orientation:portrait) and (max-width: 900px) {
   .main__section {
     min-height: 55vh;
   }
