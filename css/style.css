@@ -296,7 +296,6 @@ footer .footer__right {
 .main {
   width: 100%;
   height: auto;
-  white-space: nowrap;
   margin: 2rem auto auto;
   display: inline-block;
 }
@@ -317,7 +316,6 @@ footer .footer__right {
 @media all and (max-width: 1280px) {
   .main__section {
     width: 46%;
-    min-height: 70vh;
   }
 }
 @media all and (max-width: 900px) {
