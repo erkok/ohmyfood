@@ -23,9 +23,9 @@
 
 /*------------------------ Section / Media Queries ------------------------------*/
 
-@media screen and (orientation:portrait) {
+@media screen and (orientation:landscape) and (max-width:1280px) {
    .main__section {
-    min-height: 60vh;
+    min-height: 500px;
   }
 }
 
